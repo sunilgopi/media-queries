@@ -1,0 +1,95 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.food-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.food-item {
+    width: 310px;
+    height: 300px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fdf6e3;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.food-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.food-item img {
+    width: 100%;
+    height: 50%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.food-item-part_2 {
+    padding: 10px 0;
+}
+
+.food-item-part-2_1, .food-item-part-2_2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.a {
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+@media (max-width: 424px) {
+    .food-items {
+        background-color: rgb(19, 198, 108);
+        gap: 10px;
+    }
+    .food-item {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
+
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .food-items {
+        background-color: rgb(190, 11, 11);
+    }
+    .food-item {
+        width: 45%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .food-items {
+        background-color: rgb(152, 5, 142);
+    }
+    .food-item {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .food-items {
+        background-color: darkorange;
+    }
+    .food-item {
+        width: 22%;
+    }
+}
